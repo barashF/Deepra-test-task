@@ -7,6 +7,6 @@ router = APIRouter(
 )
 
 
-@router.get('friends/', summary='Друзьяшки')
+@router.get('/friends', summary='Друзьяшки')
 async def friends(name: str, message: str):
     return f'Hello {name}! {message}'
